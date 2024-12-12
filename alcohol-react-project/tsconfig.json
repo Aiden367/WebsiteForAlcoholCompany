@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",  // Base directory for resolving non-relative modules
+    "paths": {
+      "@frontend/*": ["src/FRONTEND/*"],  // For Frontend components
+      "@components/*": ["src/COMPONENTS/*"],  // Add this line for the COMPONENTS folder
+      "@backend/*": ["src/BACKEND/*"]
+    },
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true // Enable default imports from CommonJS
+  },
+  "include": [
+    "src/FRONTEND/**/*",  // Include all files under FRONTEND
+    "src/COMPONENTS/**/*",  // Include all files under COMPONENTS
+    "src/BACKEND/**/*",
+    "src/**/*",         
+    "**/*.css"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
